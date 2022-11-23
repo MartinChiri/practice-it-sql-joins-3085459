@@ -1,5 +1,4 @@
--- SQLite
-SELECT a.*, b.* 
+SELECT *
 from vwCUSTOMER_BIRTHDATE a 
 INNER JOIN vwCUSTOMER_ADDRESS b 
 ON a.CustomerKey = b.CustomerKey
