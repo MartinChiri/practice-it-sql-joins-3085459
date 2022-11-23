@@ -1,0 +1,304 @@
+List of Database Tables
+<table>
+<TR><TH>name</TH>
+</TR>
+<TR><TD>DimCurrency</TD>
+</TR>
+<TR><TD>DimCustomer</TD>
+</TR>
+<TR><TD>DimDate</TD>
+</TR>
+<TR><TD>DimDepartmentGroup</TD>
+</TR>
+<TR><TD>DimSalesTerritory</TD>
+</TR>
+<TR><TD>DimEmployee</TD>
+</TR>
+<TR><TD>DimGeography</TD>
+</TR>
+<TR><TD>DimOrganization</TD>
+</TR>
+<TR><TD>DimProductCategory</TD>
+</TR>
+<TR><TD>DimProductSubcategory</TD>
+</TR>
+<TR><TD>DimProduct</TD>
+</TR>
+<TR><TD>DimPromotion</TD>
+</TR>
+<TR><TD>DimSalesReason</TD>
+</TR>
+<TR><TD>FactCurrencyRate</TD>
+</TR>
+<TR><TD>FactInternetSales</TD>
+</TR>
+<TR><TD>FactInternetSalesReason</TD>
+</TR>
+<TR><TD>FactSurveyResponse</TD>
+</TR>
+<TR><TD>DimReseller</TD>
+</TR>
+<TR><TD>FactResellerSales</TD>
+</TR>
+</table>
+<BR>
+DimCustomer table (PRAGMA table_info)
+<table>
+<TR><TH>cid</TH>
+<TH>name</TH>
+<TH>type</TH>
+<TH>notnull</TH>
+<TH>dflt_value</TH>
+<TH>pk</TH>
+</TR>
+<TR><TD>0</TD>
+<TD>CustomerKey</TD>
+<TD>int IDENTITY(1,1)</TD>
+<TD>1</TD>
+<TD></TD>
+<TD>1</TD>
+</TR>
+<TR><TD>1</TD>
+<TD>GeographyKey</TD>
+<TD>INT</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>2</TD>
+<TD>CustomerAlternateKey</TD>
+<TD>nvarchar(15)</TD>
+<TD>1</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>3</TD>
+<TD>Title</TD>
+<TD>nvarchar(8)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>4</TD>
+<TD>FirstName</TD>
+<TD>nvarchar(50)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>5</TD>
+<TD>MiddleName</TD>
+<TD>nvarchar(50)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>6</TD>
+<TD>LastName</TD>
+<TD>nvarchar(50)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>7</TD>
+<TD>NameStyle</TD>
+<TD>bit</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>8</TD>
+<TD>BirthDate</TD>
+<TD>date</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>9</TD>
+<TD>MaritalStatus</TD>
+<TD>nchar(1)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>10</TD>
+<TD>Suffix</TD>
+<TD>nvarchar(10)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>11</TD>
+<TD>Gender</TD>
+<TD>nvarchar(1)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>12</TD>
+<TD>EmailAddress</TD>
+<TD>nvarchar(50)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>13</TD>
+<TD>YearlyIncome</TD>
+<TD>money</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>14</TD>
+<TD>TotalChildren</TD>
+<TD>tinyint</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>15</TD>
+<TD>NumberChildrenAtHome</TD>
+<TD>tinyint</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>16</TD>
+<TD>EnglishEducation</TD>
+<TD>nvarchar(40)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>17</TD>
+<TD>SpanishEducation</TD>
+<TD>nvarchar(40)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>18</TD>
+<TD>FrenchEducation</TD>
+<TD>nvarchar(40)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>19</TD>
+<TD>EnglishOccupation</TD>
+<TD>nvarchar(100)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>20</TD>
+<TD>SpanishOccupation</TD>
+<TD>nvarchar(100)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>21</TD>
+<TD>FrenchOccupation</TD>
+<TD>nvarchar(100)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>22</TD>
+<TD>HouseOwnerFlag</TD>
+<TD>nchar(1)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>23</TD>
+<TD>NumberCarsOwned</TD>
+<TD>tinyint</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>24</TD>
+<TD>AddressLine1</TD>
+<TD>nvarchar(120)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>25</TD>
+<TD>AddressLine2</TD>
+<TD>nvarchar(120)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>26</TD>
+<TD>Phone</TD>
+<TD>nvarchar(20)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>27</TD>
+<TD>DateFirstPurchase</TD>
+<TD>date</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+<TR><TD>28</TD>
+<TD>CommuteDistance</TD>
+<TD>nvarchar(15)</TD>
+<TD>0</TD>
+<TD></TD>
+<TD>0</TD>
+</TR>
+</table>
+<BR>
+DimCustomer Rows
+<table>
+<TR><TH>NumberOfRows</TH>
+</TR>
+<TR><TD>18484</TD>
+</TR>
+</table>
+<BR>
+DimCustomer SQL
+<table style="white-space: pre-wrap">
+<TR><TH>sql</TH>
+</TR>
+<TR><TD>CREATE TABLE DimCustomer(
+	CustomerKey int IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	GeographyKey int NULL,
+	CustomerAlternateKey nvarchar(15) NOT NULL,
+	Title nvarchar(8) NULL,
+	FirstName nvarchar(50) NULL,
+	MiddleName nvarchar(50) NULL,
+	LastName nvarchar(50) NULL,
+	NameStyle bit NULL,
+	BirthDate date NULL,
+	MaritalStatus nchar(1) NULL,
+	Suffix nvarchar(10) NULL,
+	Gender nvarchar(1) NULL,
+	EmailAddress nvarchar(50) NULL,
+	YearlyIncome money NULL,
+	TotalChildren tinyint NULL,
+	NumberChildrenAtHome tinyint NULL,
+	EnglishEducation nvarchar(40) NULL,
+	SpanishEducation nvarchar(40) NULL,
+	FrenchEducation nvarchar(40) NULL,
+	EnglishOccupation nvarchar(100) NULL,
+	SpanishOccupation nvarchar(100) NULL,
+	FrenchOccupation nvarchar(100) NULL,
+	HouseOwnerFlag nchar(1) NULL,
+	NumberCarsOwned tinyint NULL,
+	AddressLine1 nvarchar(120) NULL,
+	AddressLine2 nvarchar(120) NULL,
+	Phone nvarchar(20) NULL,
+	DateFirstPurchase date NULL,
+	CommuteDistance nvarchar(15) NULL,
+	FOREIGN KEY (GeographyKey) REFERENCES DimGeography(GeographyKey)
+)</TD>
+</TR>
+</table>
